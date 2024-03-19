@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: node-scale
+  name: node-scale
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node-scale
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: node-scale
+    spec:
+      containers:
+        - image: gorpetrosov/node-scale:latest
+          name: node-scale
+          ports:
+            - containerPort: 3000
+          resources: {}
+status: {}

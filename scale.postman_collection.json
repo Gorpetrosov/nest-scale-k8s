@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "",
+		"name": "scale",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25008492"
+	},
+	"item": [
+		{
+			"name": "concepts",
+			"item": [
+				{
+					"name": "blocking",
+					"item": [
+						{
+							"name": "init",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}",
+									"host": [
+										"{{dev}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "blocking",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/blocking",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"blocking"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "noneBlocking",
+					"item": [
+						{
+							"name": "init",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}",
+									"host": [
+										"{{dev}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "noneBlocking",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/none-blocking",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"none-blocking"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "concurrency",
+					"item": [
+						{
+							"name": "promise",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/concurrency/promises",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"concurrency",
+										"promises"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "promisesParallel",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/concurrency/promises-parallel",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"concurrency",
+										"promises-parallel"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "init",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{dev}}",
+					"host": [
+						"{{dev}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "blocking",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{dev}}/blocking",
+					"host": [
+						"{{dev}}"
+					],
+					"path": [
+						"blocking"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
